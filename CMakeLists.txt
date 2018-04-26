@@ -3,4 +3,4 @@ project(PROG___Projeto_2)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(PROG___Projeto_2 cwcreator/main.cpp cwcreator/Dictionary.cpp cwcreator/Dictionary.h cwcreator/Board.cpp cwcreator/Board.h cwcreator/wordUtils.cpp cwcreator/wordUtils.h)
+add_executable(cwcreator cwcreator/main.cpp cwcreator/Dictionary.cpp cwcreator/Dictionary.h cwcreator/Board.cpp cwcreator/Board.h cwcreator/wordUtils.cpp cwcreator/wordUtils.h)
