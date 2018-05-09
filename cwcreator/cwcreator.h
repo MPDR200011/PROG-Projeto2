@@ -19,7 +19,6 @@ private:
 
     std::string takePosition(); //toma input da posição de uma palavra.
     bool validatePosition(std::string pos);
-    std::string takeWord(); //input da word para por na tabela.
     size_t boardSizeInput(); //funcao para fazer input do tamanho das colunas/linhas
 
     void help(size_t x, size_t y, char orientation);
