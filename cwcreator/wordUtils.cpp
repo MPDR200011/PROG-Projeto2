@@ -7,7 +7,6 @@ void pw::readString(string &var) {
 	//Funcao expecificamente para ler strings
 	bool validInput;
 	do {
-		validInput = false;
 		getline(cin, var);
 		if (cin.fail()) {
 			validInput = false;
@@ -18,6 +17,57 @@ void pw::readString(string &var) {
 			validInput = true;
 		}
 	} while (!validInput);
+}
+
+bool pw::readStringEOF(std::string &var) {
+	//Funcao expecificamente para ler strings
+	//Retorna true se houver EOF
+	bool validInput;
+	do {
+		getline(cin, var);
+		if (cin.fail()) {
+            if (cin.eof()){
+                cin.clear();
+                cin.ignore(10000, '\n');
+                return true;
+            }
+			validInput = false;
+			cout << "Invalid input, try again." << endl;
+			cin.clear();
+			cin.ignore(1000, '\n');
+		} else {
+			validInput = true;
+		}
+	} while (!validInput);
+
+	return false;
+}
+
+vector<string> pw::splitLine(string line, const char splitter) {
+	//esta funcao cria um vetor de diferentes strings separadas pelo caracter dado
+	//se der uma lista de palavras separadas por virgula e der um a virgula como splitter, ele cria um vetor das repetivas palavras
+	vector<string> stringVector;
+
+	string temp = string();
+	for (char c : line) {
+	    //iterar pelos caracteres da string
+		if (c != splitter) {
+			temp += c;
+		} else {
+			temp = pw::trim(temp);
+			if (!temp.empty()) {
+				stringVector.push_back(temp);
+				temp = string();
+			}
+		}
+	}
+
+	temp = pw::trim(temp);
+	if (!temp.empty()) {
+		stringVector.push_back(temp);
+	}
+
+	return stringVector;
 }
 
 bool pw::isWordPartOfSet(string word, vector<char> set) {
@@ -56,14 +106,14 @@ bool pw::wildcardMatch(const char *str, const char *strWild) {
 			// So just an empty string matches. This is done by recursion.
 			// Because we eat one character from the match string,
 			// the recursion will stop.
-			if (wildcardMatch(str, strWild + 1))
+			if (pw::wildcardMatch(str, strWild + 1))
 				// we have a match and the * replaces no other character
 				return true;
 			// 2. Chance we eat the next character and try it again,
 			// with a wildcard * match. This is done by recursion.
 			// Because we eat one character from the string,
 			// the recursion will stop.
-			if (*str && wildcardMatch(str + 1, strWild))
+			if (*str && pw::wildcardMatch(str + 1, strWild))
 				return true;
 			// Nothing worked with this wildcard.
 			return false;
@@ -127,6 +177,13 @@ string pw::scramble(string word) {
 		swap(scramb.at(i), scramb.at(j));
 	}
 	return scramb;
+}
+
+string pw::getWorkingDirectory() {
+	char buff[FILENAME_MAX];
+	GetCurrentDir( buff, FILENAME_MAX );
+	std::string current_working_dir(buff);
+	return current_working_dir;
 }
 
 void pw::endGame() {

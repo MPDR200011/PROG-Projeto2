@@ -3,11 +3,19 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#ifdef __linux__
+#include <unistd.h>
+#define GetCurrentDir getcwd
+#else
+#include <direct.h>
+#define GetCurrentDir _getcwd
+#endif
 
 //playwords namespace
 namespace pw {
 
 	void readString(std::string &var);
+	bool readStringEOF(std::string &var);
 
 	template <class T>
 	void takeInput(T &var) {
@@ -57,6 +65,8 @@ namespace pw {
 		return false;
 	}
 
+    std::vector<std::string> splitLine(std::string line, const char splitter);
+
 	bool isWordPartOfSet(std::string word, std::vector<char> set);
 
 	bool wildcardMatch(const char *str, const char *strWild);
@@ -70,6 +80,8 @@ namespace pw {
 	std::string makeUpper(std::string s);
 
 	std::string scramble(std::string word);
+
+	std::string getWorkingDirectory();
 
 	void endGame();
 
