@@ -31,19 +31,23 @@ public:
     void setSize(size_t nLines, size_t nCols);
     int addWord(std::string word, size_t x, size_t y, char orientation);
     void deleteWord(size_t x, size_t y, char orientation);
-
+    void substBlackCells();
+    void substWhiteCells();
+    int isItFull();
     friend std::ostream& operator<<(std::ostream &out, Board &board);
-
+    size_t nCol;
+    size_t nLines;
 private:
     void checkIntegrity();
 
-    size_t nCol;
-    size_t nLines;
-
+    std::vector<BoardWord> wordVectorSin;
     std::vector<BoardWord> wordVector;
     std::vector<std::vector<char>> matrix;
 
 public:
+
+    std::vector<std::vector<char>> matrixV;
+
     size_t getNCol() const;
 
     void setNCol(size_t nCol);
@@ -60,6 +64,17 @@ public:
 
     void setMatrix(const std::vector<std::vector<char>> &matrix);
 
+    int checkM();
+
+    void equalM();
+
+    void wordVectorWipe();
+
+    int isWordThere(size_t x, size_t y, char orientation);
+    int isWordThereSin(size_t x, size_t y, char orientation);
+    int isSinThere(std::string palavra);
+    std::string WordOg;
+    std::vector<std::string> wordSynsB;
 };
 
 

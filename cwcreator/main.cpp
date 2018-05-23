@@ -20,14 +20,34 @@ int main() {
         cout << endl;
     }*/
 
-    cout << "CROSS WORDS PUZZLE CREATOR" << endl;
-    cout << "===============================================" << endl;
+    cout << "_________                               __      __                .___      " << endl;
+    cout << "\\_   ___ \\_______  ____  ______ ______ /  \\    /  \\___________  __| _/______" << endl;
+    cout << "/    \\  \\/\\_  __ \\/  _ \\/  ___//  ___/ \\   \\/\\/   /  _ \\_  __ \\/ __ |/  ___/" << endl;
+    cout << "\\     \\____|  | \\(  <_> )___ \\ \\___ \\   \\        (  <_> )  | \\/ /_/ |\\___ \\ " << endl;
+    cout << " \\______  /|__|   \\____/____  >____  >   \\__/\\  / \\____/|__|  \\____ /____  >" << endl;
+    cout << "        \\/                  \\/     \\/         \\/                   \\/    \\/ " << endl;
+    cout << "            _________                        __                             " << endl;
+    cout << "            \\_   ___ \\_______   ____ _____ _/  |_  ___________              " << endl;
+    cout << "            /    \\  \\/\\_  __ \\_/ __ \\\\__  \\\\   __\\/  _ \\_  __ \\             " << endl;
+    cout << "            \\     \\____|  | \\/\\  ___/ / __ \\|  | (  <_> )  | \\/             " << endl;
+    cout << "             \\______  /|__|    \\___  >____  /__|  \\____/|__|                " << endl;
+    cout << "                    \\/             \\/     \\/                                " << endl;
+    cout << endl;
+
+
+
+    cout << "==============================================================================" << endl;
     cout << endl;
 
     //Instrucoes acerca do construtor de tabelas
     cout << "INSTRUCTIONS: " << endl;
-    cout << "Position ( LCD / CTRL-Z = stop)" << endl;
-    cout << "   LCD stand for Line Column and Direction (Horizontal or Vertical, ex: AaH)" << endl;
+    cout << "Position ( LCD / write \"exit\" to stop)" << endl;
+    cout << "   LCD stands for Line Column and Direction (Horizontal or Vertical, ex: AaH)" << endl;
+    cout << endl <<
+            "After inputting the position there are a few options you can take:" << endl <<
+            "   - Write the word you want to put in the table." << endl <<
+            "   - Write \"?\" to get a list of words you can input in said position." << endl <<
+            "   - Write \"-\" to delete the word in said position (if there is no word it won't do anything)." << endl;
 
     cout << "-----------------------------------------------" << endl;
 

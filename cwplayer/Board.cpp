@@ -1,6 +1,7 @@
 #include <iomanip>
 #include <iostream>
 #include "Board.h"
+#include "cwplayer.h"
 
 
 using namespace std;
@@ -10,6 +11,8 @@ Board::Board(size_t nLine, size_t nCol) {
     this->nCol = nCol;
     matrix = vector<vector<char>>(nLine, vector<char>(nCol, '.'));
 }
+
+
 
 void Board::setSize(size_t nLines, size_t nCols) {
     this->nLines = nLines;
@@ -28,11 +31,11 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
     //o codigo usado para inserir os asteriscos antes e depois das palavras estao envolvidos
     //em blocos try/catch pois as extremidades das palavras podem estar nas extremidades da tabela
 
-    for (BoardWord toCompare: wordVector){
-        if (toCompare.word == word){
-            return 2;
-        }
+
+    if (isWordThere(x, y, orientation)== 1) {
+        return 3;
     }
+
 
     BoardWord wordStruct = {
             x,
@@ -49,16 +52,7 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
             return 1;
         }
 
-        //asterisco antes da palavra
-        try {
-            char matrixChar = matrix.at(y-1).at(x);
-            if (matrixChar == '.' || matrixChar == '#') {
-                matrix.at(y-1).at(x) = '#';
-            } else {
-                deleteWord(x,y,orientation);
-                return 3;
-            }
-        } catch (out_of_range &e) {}
+
 
         //preencher coluna a partir da posicao dada
         for (size_t i = 0; i < word.length(); ++i) {
@@ -74,16 +68,7 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
             }
         }
 
-        //asterisco depois da palavra
-        try {
-            char matrixChar = matrix.at(y+word.length()).at(x);
-            if (matrixChar == '.' || matrixChar == '#'){
-                matrix.at(y+word.length()).at(x) = '#';
-            } else {
-                deleteWord(x,y,orientation);
-                return 3;
-            }
-        } catch (out_of_range &e) {}
+
 
 
     } else {
@@ -92,16 +77,7 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
             return 1;
         }
 
-        //asterisco antes da palavra
-        try {
-            char matrixChar = matrix.at(y).at(x-1);
-            if (matrixChar == '.' || matrixChar == '#') {
-                matrix.at(y).at(x-1) = '#';
-            } else {
-                deleteWord(x,y,orientation);
-                return 3;
-            }
-        } catch (out_of_range &e) {}
+
 
         //preencher linha a partir da posicao dada
         for (size_t i = 0; i < word.length(); ++i) {
@@ -117,16 +93,7 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
             }
         }
 
-        //asterisco depois da palavra
-        try {
-            char matrixChar = matrix.at(y).at(x + word.length());
-            if (matrixChar == '.' || matrixChar == '#'){
-                matrix.at(y).at(x + word.length()) = '#';
-            } else {
-                deleteWord(x,y,orientation);
-                return 3;
-            }
-        } catch (out_of_range &e) {}
+
 
     }
 
@@ -157,29 +124,17 @@ void Board::deleteWord(size_t x, size_t y, char orientation) {
     string word = toDelete.word;
 
     if (toDelete.orientation == VERTICAL) {
-        try {
-            matrix.at(toDelete.y-1).at(toDelete.x) = '.';
-        } catch (out_of_range &e) {}
-
         for (size_t i = 0; i < word.length(); ++i) {
-            matrix.at(toDelete.y+i).at(toDelete.x) = '.';
+            if ((matrix.at(toDelete.y+i).at(toDelete.x)) != '#') {
+                matrix.at(toDelete.y + i).at(toDelete.x) = '.';
+            }
         }
-
-        try {
-            matrix.at(toDelete.y+word.length()).at(toDelete.x) = '.';
-        } catch (out_of_range &e) {}
     } else {
-        try {
-            matrix.at(toDelete.y).at(toDelete.x-1) = '.';
-        } catch (out_of_range &e) {}
-
         for (size_t i = 0; i < word.length(); ++i) {
-            matrix.at(toDelete.y).at(toDelete.x+i) = '.';
+            if ((matrix.at(toDelete.y).at(toDelete.x+i)) != '#') {
+                matrix.at(toDelete.y).at(toDelete.x + i) = '.';
+            }
         }
-
-        try {
-            matrix.at(toDelete.y).at(toDelete.x+word.length()) = '.';
-        } catch (out_of_range &e) {}
     }
 
     wordVector.erase(iter);
@@ -264,6 +219,37 @@ void Board::checkIntegrity() {
     }
 }
 
+void Board::substBlackCells(){
+    // substitui tudo por black cells
+    for (int i = 0; i < nLines; i++){
+        for (int j = 0; j < nCol; j++){
+            if(matrix.at(j).at(i) == '.'){
+                matrix.at(j).at(i) = '#';
+            }
+        }
+    }
+}
+
+void Board::substWhiteCells(){
+    // substitui palavras por white cells
+    for (int i = 0; i < nLines; i++){
+        for (int j = 0; j < nCol; j++){
+            if(matrix.at(j).at(i) != '#' && matrix.at(j).at(i) != ' ' ){
+                matrix.at(j).at(i) = '.';
+            }
+        }
+    }
+}
+
+int Board::isItFull(){
+    for (int i = 0; i < nLines; i++){
+        for (int j = 0; j < nCol; j++){
+            if(matrix.at(j).at(i) == '.'){
+                return false;
+            }
+        }
+    }
+}
 //////////////  GETTERS AND SETTERS //////////////////////
 size_t Board::getNCol() const {
     return nCol;
@@ -295,4 +281,51 @@ const vector<vector<char>> &Board::getMatrix() const {
 
 void Board::setMatrix(const vector<vector<char>> &matrix) {
     Board::matrix = matrix;
+}
+
+
+
+int Board::checkM(){
+    if(matrix == matrixV){
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+
+void Board::equalM() {
+    matrixV = matrix;
+}
+
+void Board::wordVectorWipe() {
+    wordVectorSin = wordVector;
+    wordVector = vector<BoardWord>();
+}
+
+int Board::isWordThere(size_t x1, size_t y1, char orient) {
+    Orientation direction = orient == 'V' ? VERTICAL : HORIZONTAL;
+    for (int i =0; i < wordVector.size(); i++) {
+        if ( (x1 == wordVector[i].x) && (y1 == wordVector[i].y) && (direction == wordVector[i].orientation)){
+            return 1;
+        }
+    }
+}
+
+int Board::isWordThereSin(size_t x1, size_t y1, char orient) {
+    Orientation direction = orient == 'V' ? VERTICAL : HORIZONTAL;
+    for (int i =0; i < wordVectorSin.size(); i++) {
+        if ( (x1 == wordVectorSin[i].x) && (y1 == wordVectorSin[i].y) && (direction == wordVectorSin[i].orientation)){
+            WordOg = wordVectorSin[i].word;
+            return true;
+        }
+    }
+}
+
+int Board::isSinThere(std::string palavra) {
+    for (int i =0; i < wordSynsB.size(); i++) {
+        if ( palavra == wordSynsB[i]){
+            return true;
+        }
+    }
 }

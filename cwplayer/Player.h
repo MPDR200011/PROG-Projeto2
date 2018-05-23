@@ -1,8 +1,26 @@
-//
-// Created by joaop on 20/05/2018.
-//
+#pragma once
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <time.h>
 
-#ifndef PROG_PROJETO_2_PLAYER_H
-#define PROG_PROJETO_2_PLAYER_H
 
-#endif //PROG_PROJETO_2_PLAYER_H
+using namespace std;
+
+class Player {
+public:
+	Player();
+	string getName();
+	void updateFileName(string fileName);
+	void setStartTime();
+	void updateTime();
+	void incHints();
+	void statsPlayer();
+	string puzzleFileName;
+private:
+	string name;
+	unsigned startTime;
+	int numbHints;
+	unsigned timePlayed;
+};

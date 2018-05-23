@@ -63,6 +63,7 @@ cwcreator::cwcreator(std::ifstream &saveFile, const std::string &name) {
     getline(saveFile, dictionaryName);
     ifstream dictionaryFile(dictionaryName);
     while (!dictionaryFile.is_open()) {
+        dictionaryFile.close();
         cout << "Dictionary in the directory does not exist, input valid name." << endl;
         pw::readString(dictionaryName);
         dictionaryFile.open(dictionaryName);
@@ -138,38 +139,33 @@ void cwcreator::buildLoop() {
 
             //Quando o utilizador escreve "?" o programa mostra sugestoes e pede para instroduzir
             string word;
-            do {
-                cout << "Word (- = remove / ? = help) ? ";
-                pw::readString(word);
-                word = pw::makeUpper(word);
-                word = pw::trim(word);
+            cout << "Word (- = remove / ? = help) ? ";
+            pw::readString(word);
+            word = pw::makeUpper(word);
+            word = pw::trim(word);
 
-                if (word == "?") {
-                    help(x,y,orientation);
-                    validWord = false;
-                    break;
-                }
-
-                //verificacao se a palavra
-                vector<string> dictWords = dict.getHeadWords();
-                auto iter = find(dictWords.begin(), dictWords.end(), word);
-                if (iter == dictWords.end()){
-                    cout << "Word is not in dictionary." << endl;
-                    validWord = false;
-                    break;
-                }
-
-            } while (word == "?");
+            if (word == "?") {
+                help(x,y,orientation);
+                validWord = false;
+            }
 
             //Caso o utilizador escreva "-" o programa elimina a palavra na posicao dada
             if (word == "-"){
                 board.deleteWord(x,y,orientation);
-                continue;
+                validWord = true; //fica true para se poder imprimir a tabela novamente
             }
 
-            //se a palavra nao se mostre valida nao vale a pena correr o switch em baixo
-            //entao, passa-se diretamente para a prxima iteracao
-            if (!validWord) continue;
+            //se a palavra nao se mostre valida nao vale a pena correr o resto da iteracao
+            if (!validWord || word == "-") continue;
+
+            //verificacao se a palavra existe no dicionario
+            vector<string> dictWords = dict.getHeadWords();
+            auto iter = find(dictWords.begin(), dictWords.end(), word);
+            if (iter == dictWords.end()){
+                cout << "Word is not in dictionary." << endl;
+                validWord = false;
+                continue;
+            }
 
             //Gestao de erros e palavras invalidas (caso sejam) e alertamento ao utilizador
             //acerca do porque da sua palavra ser invalida
@@ -285,7 +281,7 @@ void cwcreator::help(size_t x, size_t y, char orientation) {
                     if (!isalnum(matrix.at(i+1).at(x))) {
                         wildcardVector.push_back(temp);
                     }
-                } catch (out_of_range) {
+                } catch (out_of_range &e) {
                     wildcardVector.push_back(temp);
                 }
             } else {
@@ -294,7 +290,7 @@ void cwcreator::help(size_t x, size_t y, char orientation) {
                     if (!isalnum(matrix.at(i+1).at(x))) {
                         wildcardVector.push_back(temp);
                     }
-                } catch (out_of_range) {
+                } catch (out_of_range &e) {
                     wildcardVector.push_back(temp);
                 }
             }
@@ -311,7 +307,7 @@ void cwcreator::help(size_t x, size_t y, char orientation) {
                     if (!isalnum(matrix.at(y).at(i+1))) {
                         wildcardVector.push_back(temp);
                     }
-                } catch (out_of_range) {
+                } catch (out_of_range &e) {
                     wildcardVector.push_back(temp);
                 }
             } else {
@@ -320,7 +316,7 @@ void cwcreator::help(size_t x, size_t y, char orientation) {
                     if (!isalnum(matrix.at(y).at(i+1))) {
                         wildcardVector.push_back(temp);
                     }
-                } catch (out_of_range) {
+                } catch (out_of_range &e) {
                     wildcardVector.push_back(temp);
                 }
             }
@@ -339,7 +335,7 @@ void cwcreator::help(size_t x, size_t y, char orientation) {
         cout << "There are no words you can put in this position." << endl;
     } else {
         cout << "You can put the following: " << endl;
-        for (string word: suggestions){
+        for (const string &word: suggestions){
             cout << word << endl;
         }
     }

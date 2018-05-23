@@ -12,22 +12,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8120dac7-856f-4950-bfae-8197328fe9ce" name="Default" comment="cwplayer created">
-      <change afterPath="$PROJECT_DIR$/cwplayer/Board.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/Board.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/Dictionary.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/Dictionary.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/coloredTextLinux.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/coloredTextLinux.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/coloredTextWindows.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/coloredTextWindows.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/wordUtils.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cwplayer/wordUtils.h" afterDir="false" />
+    <list default="true" id="8120dac7-856f-4950-bfae-8197328fe9ce" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwcreator/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cwcreator/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cwcreator/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/cwcreator/Board.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cwcreator/cwcreator.h" beforeDir="false" afterPath="$PROJECT_DIR$/cwcreator/cwcreator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwcreator/cwcreator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cwcreator/cwcreator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwcreator/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cwcreator/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cwplayer/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/cwplayer/Board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cwplayer/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/cwplayer/Player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/Puzzle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/Puzzle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/cwplayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cwplayer/cwplayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/cwplayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/cwplayer/cwplayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cwplayer/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cwplayer/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +41,59 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cwcreator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.h">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cwplayer/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="924">
+              <caret line="42" column="108" selection-start-line="42" selection-start-column="108" selection-end-line="42" selection-end-column="108" />
               <folding>
-                <element signature="e#71#90#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cwplayer/Board.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="317" column="42" selection-start-line="317" selection-end-line="318" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cwcreator/Board.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="108" column="34" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#82#241#0" />
+                <element signature="e#243#415#0" />
+                <element signature="e#5462#6199#0" />
+                <element signature="e#6201#7221#0" />
+                <element signature="e#7223#7332#0" />
+                <element signature="e#7334#7394#0" />
+                <element signature="e#7396#7450#0" />
+                <element signature="e#7452#7520#0" />
+                <element signature="e#7522#7602#0" />
+                <element signature="e#7604#7706#0" />
+                <element signature="e#7708#7783#0" />
+                <element signature="e#7785#7874#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cwcreator/Board.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1341">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
         </entry>
@@ -55,17 +101,54 @@
       <file leaf-file-name="Board.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cwplayer/Board.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="770">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+              <folding>
+                <element signature="e#63#81#0" expanded="true" />
+                <element signature="e#151#188#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cwcreator/Board.h">
+      <file leaf-file-name="cwplayer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cwplayer/cwplayer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="237">
+              <caret line="223" column="16" selection-start-line="223" selection-start-column="16" selection-end-line="223" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cwplayer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cwplayer/cwplayer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="e#105#124#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cwplayer/Player.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cwcreator/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="51" column="70" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -75,6 +158,29 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>exit</find>
+      <find>string</find>
+      <find>saveFile</find>
+      <find>dict</find>
+      <find>orientation</find>
+      <find>ncol</find>
+      <find>temp.length</find>
+      <find>temp</find>
+      <find>matrix</find>
+      <find>size</find>
+      <find>board</find>
+      <find>anotherInput</find>
+      <find>return</find>
+      <find>take</find>
+      <find>deleteWord</find>
+      <find>boardV</find>
+      <find>wordVector</find>
+      <find>return 1</find>
+      <find>isWordThere</find>
+      <find>board.wordsin</find>
+      <find>board.wordsyn</find>
+      <find>wordsyn</find>
+      <find>usa</find>
+      <find>iswordthere</find>
     </findStrings>
     <dirStrings>
       <dir>C:\ARMAZEM\Programacao\C++\PROG - Projeto 2 - cwcreator\cwcreator</dir>
@@ -97,19 +203,31 @@
         <option value="$PROJECT_DIR$/cwcreator/coloredTextLinux.cpp" />
         <option value="$PROJECT_DIR$/cwcreator/coloredTextLinux.h" />
         <option value="$PROJECT_DIR$/cwcreator/coloredTextWindows.h" />
-        <option value="$PROJECT_DIR$/cwcreator/Board.cpp" />
         <option value="$PROJECT_DIR$/cwcreator/Dictionary.h" />
         <option value="$PROJECT_DIR$/cwcreator/wordUtils.h" />
         <option value="$PROJECT_DIR$/cwcreator/Dictionary.cpp" />
-        <option value="$PROJECT_DIR$/cwcreator/main.cpp" />
-        <option value="$PROJECT_DIR$/cwcreator/cwcreator.cpp" />
         <option value="$PROJECT_DIR$/cwcreator/wordUtils.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cwcreator/cwcreator.h" />
-        <option value="$PROJECT_DIR$/cwplayer/Board.h" />
+        <option value="$PROJECT_DIR$/cwplayer/wordUtils.cpp" />
+        <option value="$PROJECT_DIR$/cwcreator/cwcreator.cpp" />
+        <option value="$PROJECT_DIR$/cwplayer/syn.cpp" />
+        <option value="$PROJECT_DIR$/cwplayer/synccc.cpp" />
+        <option value="$PROJECT_DIR$/cwplayer/Puzzle.cpp" />
+        <option value="$PROJECT_DIR$/cwplayer/Puzzle.h" />
+        <option value="$PROJECT_DIR$/cwplayer/helpme.cpp" />
         <option value="$PROJECT_DIR$/cwcreator/Board.h" />
+        <option value="$PROJECT_DIR$/cwplayer/cwplayer.h" />
+        <option value="$PROJECT_DIR$/cwplayer/Player.h" />
+        <option value="$PROJECT_DIR$/cwplayer/Player.cpp" />
+        <option value="$PROJECT_DIR$/cwcreator/main.cpp" />
+        <option value="$PROJECT_DIR$/cwplayer/main.cpp" />
+        <option value="$PROJECT_DIR$/cwplayer/Board.h" />
+        <option value="$PROJECT_DIR$/cwplayer/Board.cpp" />
+        <option value="$PROJECT_DIR$/cwplayer/cwplayer.cpp" />
+        <option value="$PROJECT_DIR$/cwcreator/Board.cpp" />
       </list>
     </option>
   </component>
@@ -124,10 +242,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="417" />
-    <option name="y" value="43" />
-    <option name="width" value="892" />
-    <option name="height" value="483" />
+    <option name="x" value="855" />
+    <option name="y" value="185" />
+    <option name="width" value="895" />
+    <option name="height" value="485" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,6 +253,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PROG___Projeto_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PROG-Projeto-2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PROG___Projeto_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PROG-Projeto-2" type="462c0819:PsiDirectoryNode" />
+              <item name="cwcreator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PROG___Projeto_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PROG-Projeto-2" type="462c0819:PsiDirectoryNode" />
+              <item name="cwplayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Source Files">
           <expand>
@@ -149,28 +288,12 @@
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PROG - Projeto 2" type="cbb8eebc:String" user="PROG - Projeto 2" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PROG___Projeto_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PROG - Projeto 2 - cwcreator" type="462c0819:PsiDirectoryNode" />
+              <item name="PROG-Projeto-2" type="cbb8eebc:String" user="PROG-Projeto-2" />
             </path>
             <path>
-              <item name="PROG___Projeto_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PROG - Projeto 2 - cwcreator" type="462c0819:PsiDirectoryNode" />
-              <item name="cwcreator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PROG___Projeto_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PROG - Projeto 2 - cwcreator" type="462c0819:PsiDirectoryNode" />
-              <item name="cwplayer" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PROG-Projeto-2" type="cbb8eebc:String" user="PROG-Projeto-2" />
+              <item name="cwcreator" type="cbb8eebc:String" user="cwcreator" />
             </path>
           </expand>
           <select />
@@ -209,15 +332,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.cwcreator - Windows Console">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PROG___Projeto_2" TARGET_NAME="cwcreator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PROG___Projeto_2" RUN_TARGET_NAME="cwcreator" />
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PROG___Projeto_2" TARGET_NAME="cwcreator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PROG___Projeto_2" RUN_TARGET_NAME="cwplayer" />
     <configuration name="cwcreator - Linux Console" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-e ./cwcreator" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PROG___Projeto_2" TARGET_NAME="cwcreator" CONFIG_NAME="Debug" RUN_PATH="/usr/bin/konsole" />
     <configuration name="cwcreator - Windows Console" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/C &quot;cwcreator.bat&quot;" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PROG___Projeto_2" TARGET_NAME="cwcreator" CONFIG_NAME="Debug" RUN_PATH="C:/Windows/System32/cmd.exe" />
-    <configuration name="cwcreator" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PROG___Projeto_2" TARGET_NAME="cwcreator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PROG___Projeto_2" RUN_TARGET_NAME="cwcreator" />
-    <configuration name="cwplayer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PROG___Projeto_2" TARGET_NAME="cwplayer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PROG___Projeto_2" RUN_TARGET_NAME="cwplayer" />
+    <configuration name="cwplayer - Windows Console" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="/C &quot;cwplayer.bat&quot;" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PROG___Projeto_2" TARGET_NAME="cwplayer" CONFIG_NAME="Debug" RUN_PATH="C:/Windows/System32/cmd.exe" />
     <list>
+      <item itemvalue="Application.cwplayer - Windows Console" />
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.cwcreator" />
-      <item itemvalue="Application.cwplayer" />
       <item itemvalue="Application.cwcreator - Windows Console" />
       <item itemvalue="Application.cwcreator - Linux Console" />
     </list>
@@ -246,6 +367,23 @@
       <workItem from="1525872821491" duration="57000" />
       <workItem from="1525872963589" duration="7898000" />
       <workItem from="1525881099445" duration="871000" />
+      <workItem from="1526738202885" duration="672000" />
+      <workItem from="1526769309468" duration="507000" />
+      <workItem from="1526816202703" duration="2809000" />
+      <workItem from="1526832612656" duration="8402000" />
+      <workItem from="1526845889474" duration="7790000" />
+      <workItem from="1526854684578" duration="361000" />
+      <workItem from="1526855087857" duration="1474000" />
+      <workItem from="1526856700919" duration="152000" />
+      <workItem from="1526910073866" duration="1449000" />
+      <workItem from="1526911556111" duration="305000" />
+      <workItem from="1526911970428" duration="998000" />
+      <workItem from="1526912979976" duration="1297000" />
+      <workItem from="1526914495384" duration="2002000" />
+      <workItem from="1526916509278" duration="11209000" />
+      <workItem from="1527016337580" duration="6366000" />
+      <workItem from="1527023589460" duration="18793000" />
+      <workItem from="1527061775922" duration="1976000" />
     </task>
     <task id="LOCAL-00001" summary="projeto criado">
       <created>1524762477558</created>
@@ -268,11 +406,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525881256236</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cwplayer created">
+      <created>1526911789561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526911789561</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64096000" />
+    <option name="totallyTimeSpent" value="132791000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -284,49 +429,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15699404" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15690105" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3282572" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.32994923" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32994923" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32994923" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.80275863" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32965517" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50065106" side_tool="true" weight="0.42344826" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49934897" visible="true" weight="0.42344826" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32994923" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32965517" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" x="1691" y="36" width="1170" height="646" id="Debug" order="3" weight="0.3282572" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" x="1380" y="8" width="1089" height="694" id="Messages" order="7" weight="0.49238577" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32994923" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15699404" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3282572" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" x="1691" y="36" width="1170" height="646" id="Debug" order="3" weight="0.3282572" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32994923" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32994923" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="1380" y="8" width="1089" height="694" id="Messages" order="7" weight="0.5160745" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -338,97 +462,31 @@
     <MESSAGE value="projeto criado" />
     <MESSAGE value="moved files" />
     <MESSAGE value="cwcreator completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="cwcreator completed" />
+    <MESSAGE value="cwplayer created" />
+    <option name="LAST_COMMIT_MESSAGE" value="cwplayer created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/cwplayer/cwplayer.cpp</url>
+          <line>67</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/cwplayer/cwplayer.cpp</url>
+          <line>170</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cwcreator/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/Board.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/Board.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/Board.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/Board.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2838">
-          <caret line="129" column="30" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2596">
-          <caret line="118" column="33" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,9 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -502,9 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,11 +593,7 @@
         <state relative-caret-position="-1622" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sinwin.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3102" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/sinwin.txt" />
     <entry file="file://$PROJECT_DIR$/cwcreator/coloredText.h" />
     <entry file="file://$PROJECT_DIR$/cwcreator/coloredTextLinux.cpp" />
     <entry file="file://$PROJECT_DIR$/cwcreator/coloredTextLinux.h">
@@ -576,117 +624,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/Dictionary.h">
+    <entry file="file://$PROJECT_DIR$/cwplayer/wordUtils.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/Board.cpp">
+    <entry file="file://$PROJECT_DIR$/cwcreator/coloredTextWindows.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="264" column="1" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
-          <folding>
-            <element signature="e#6130#7150#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/Dictionary.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1093#1321#0" />
-            <element signature="e#1323#1456#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="7" selection-start-line="11" selection-start-column="4" selection-end-line="20" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5918">
-          <caret line="269" column="59" selection-start-line="269" selection-start-column="59" selection-end-line="269" selection-end-column="59" />
-          <folding>
-            <element signature="e#69#1508#0" />
-            <element signature="e#1510#3010#0" />
-            <element signature="e#5428#6786#0" />
-            <element signature="e#6788#7044#0" />
-            <element signature="e#7547#7996#0" />
-            <element signature="e#7906#7973#0" />
-            <element signature="e#7998#8610#0" />
-            <element signature="e#8612#9644#0" />
-            <element signature="e#9646#10811#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/wordUtils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="172" column="33" selection-start-line="172" selection-start-column="33" selection-end-line="172" selection-end-column="33" />
-          <folding>
-            <element signature="e#67#386#0" />
-            <element signature="e#388#902#0" />
-            <element signature="e#904#1569#0" />
-            <element signature="e#1571#2014#0" />
-            <element signature="e#2016#3501#0" />
-            <element signature="e#3503#3651#0" />
-            <element signature="e#3653#3778#0" />
-            <element signature="e#3780#4111#0" />
-            <element signature="e#4113#4237#0" />
-            <element signature="e#4239#4444#0" />
-            <element signature="e#4446#4615#0" />
-            <element signature="e#4617#4703#0" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cwcreator/wordUtils.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="67" column="78" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
-          <folding>
-            <element signature="e#315#852#0" />
-            <element signature="e#855#1419#0" />
-          </folding>
+        <state relative-caret-position="770">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwplayer/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwplayer/Dictionary.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwplayer/main.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwplayer/Dictionary.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwcreator/coloredTextWindows.cpp">
+    <entry file="file://$PROJECT_DIR$/cwplayer/syn.cpp" />
+    <entry file="file://$PROJECT_DIR$/cwplayer/synccc.cpp" />
+    <entry file="file://$PROJECT_DIR$/../../../../../copy-pasta.cpp" />
+    <entry file="file://$PROJECT_DIR$/cwplayer/helpme.cpp" />
+    <entry file="file://$PROJECT_DIR$/cwplayer/Puzzle.h" />
+    <entry file="file://$PROJECT_DIR$/cwcreator/Dictionary.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwplayer/Board.cpp">
+    <entry file="file://$PROJECT_DIR$/cwcreator/Dictionary.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3" />
+        <state relative-caret-position="367">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -696,30 +671,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwplayer/coloredTextLinux.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="435">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwcreator/cwcreator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
           <folding>
-            <element signature="e#71#90#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwplayer/Dictionary.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwcreator/wordUtils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwplayer/Puzzle.cpp" />
+    <entry file="file://$PROJECT_DIR$/cwplayer/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwplayer/cwplayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="e#105#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwplayer/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="108" selection-start-line="42" selection-start-column="108" selection-end-line="42" selection-end-column="108" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwcreator/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" column="70" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cwplayer/Board.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="770">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="e#63#81#0" expanded="true" />
+            <element signature="e#151#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/b001_s.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/b001.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwplayer/cwplayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="223" column="16" selection-start-line="223" selection-start-column="16" selection-end-line="223" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwplayer/Player.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cwcreator/Board.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="1341">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwplayer/Board.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="317" column="42" selection-start-line="317" selection-end-line="318" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwcreator/Board.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="108" column="34" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#82#241#0" />
+            <element signature="e#243#415#0" />
+            <element signature="e#5462#6199#0" />
+            <element signature="e#6201#7221#0" />
+            <element signature="e#7223#7332#0" />
+            <element signature="e#7334#7394#0" />
+            <element signature="e#7396#7450#0" />
+            <element signature="e#7452#7520#0" />
+            <element signature="e#7522#7602#0" />
+            <element signature="e#7604#7706#0" />
+            <element signature="e#7708#7783#0" />
+            <element signature="e#7785#7874#0" />
+          </folding>
         </state>
       </provider>
     </entry>

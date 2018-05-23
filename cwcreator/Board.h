@@ -60,6 +60,7 @@ public:
 
     void setMatrix(const std::vector<std::vector<char>> &matrix);
 
+    int isWordThere(size_t x, size_t y, char orientation);
 };
 
 

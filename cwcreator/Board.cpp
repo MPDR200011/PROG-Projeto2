@@ -1,6 +1,7 @@
 #include <iomanip>
 #include <iostream>
 #include "Board.h"
+#include <algorithm>
 
 
 using namespace std;
@@ -28,6 +29,10 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
     //o codigo usado para inserir os asteriscos antes e depois das palavras estao envolvidos
     //em blocos try/catch pois as extremidades das palavras podem estar nas extremidades da tabela
 
+    if (isWordThere(x, y, orientation)== 1) {
+        return 3;
+    }
+
     for (BoardWord toCompare: wordVector){
         if (toCompare.word == word){
             return 2;
@@ -43,9 +48,21 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
 
     wordVector.push_back(wordStruct);
 
+    auto ptr = wordVector.begin();
+
+    while (ptr != wordVector.end()){
+
+        if (ptr->x == wordStruct.x && ptr->y == wordStruct.y && ptr->orientation == wordStruct.orientation){
+            break;
+        }
+
+        ptr++;
+    }
+
     if (orientation == 'V') {
         //verificacao para ver se a palavra cabe
         if (y + word.length() > nLines) {
+            wordVector.erase(ptr);
             return 1;
         }
 
@@ -89,6 +106,7 @@ int Board::addWord(std::string word, size_t x, size_t y, char orientation) {
     } else {
         //verificacao para ver se a palavra cabe
         if (x + word.length() > nCol) {
+            wordVector.erase(ptr);
             return 1;
         }
 
@@ -295,4 +313,15 @@ const vector<vector<char>> &Board::getMatrix() const {
 
 void Board::setMatrix(const vector<vector<char>> &matrix) {
     Board::matrix = matrix;
+}
+
+int Board::isWordThere(size_t x1, size_t y1, char orient) {
+    Orientation direction = orient == 'V' ? VERTICAL : HORIZONTAL;
+    for (int i =0; i < wordVector.size(); i++) {
+        if ( (x1 == wordVector[i].x) && (y1 == wordVector[i].y) && (direction == wordVector[i].orientation)){
+            return 1;
+        }
+    }
+
+    return 0;
 }
